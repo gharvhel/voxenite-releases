@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voxenite</title>
+  <meta name="description" content="Voxenite is a mechanically realistic co-op voxel game with 1/8 metre voxels. Download for Windows, macOS, or Linux and play.">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="./">
+    <img src="icon.png" alt="" width="28" height="28">
+    <span>Voxenite</span>
+  </a>
+  <nav>
+    <a href="#download">Download</a>
+    <a href="#features">Features</a>
+    <a href="#install">Install</a>
+    <a href="#channels">Channels</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero" id="download">
+    <div class="hero-copy">
+      <h1>Voxenite</h1>
+      <p class="tagline">
+        A mechanically realistic co-op voxel world at one-eighth metre resolution.
+        Chop, burn, flood, build. Everything reacts.
+      </p>
+
+      <div class="download-box" data-state="loading">
+        <a class="btn-download" id="download-btn" href="#other-platforms" rel="noopener">
+          <span class="btn-label" id="download-label">Checking latest version…</span>
+          <span class="btn-sub" id="download-sub"></span>
+        </a>
+        <p class="download-meta">
+          <span id="version-line">Version: loading</span>
+          <span class="dot" aria-hidden="true">·</span>
+          <span id="download-count">Counting downloads…</span>
+        </p>
+        <p class="other-platforms" id="other-platforms">
+          Also available for:
+          <a data-platform="windows-x64" href="#">Windows</a>
+          <a data-platform="macos-universal" href="#">macOS</a>
+          <a data-platform="linux-x64" href="#">Linux</a>
+        </p>
+        <p class="not-yet" id="not-yet" hidden>
+          The first public release is not out yet. Check back soon.
+        </p>
+      </div>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <!-- Decorative voxel stack. Replace with a real screenshot when you have one:
+           <img src="screenshots/hero.png" alt="Voxenite gameplay"> -->
+      <div class="voxel-stack">
+        <span class="vx grass"></span><span class="vx grass"></span><span class="vx dirt"></span>
+        <span class="vx dirt"></span><span class="vx stone"></span><span class="vx stone"></span>
+        <span class="vx fire"></span><span class="vx water"></span><span class="vx wood"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <h2>What makes it different</h2>
+    <div class="grid">
+      <article>
+        <h3>1/8 metre voxels</h3>
+        <p>Eight times finer than a one-metre block. Terrain, trees, and structures carry real detail without losing the building feel.</p>
+      </article>
+      <article>
+        <h3>Things fall, burn, and flow</h3>
+        <p>Trees topple when you cut through the trunk. Fire spreads along fuel and is put out by water. Water finds its own level.</p>
+      </article>
+      <article>
+        <h3>Play together</h3>
+        <p>Host a world from the menu and friends join over the local network. An authoritative server keeps everyone in sync.</p>
+      </article>
+      <article>
+        <h3>Custom engine</h3>
+        <p>Built from scratch in C++20 on SDL3. Greedy meshing, a worker pool, and GPU-driven culling keep 60 FPS on mid-range hardware.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="install" id="install">
+    <h2>Install and play</h2>
+    <div class="grid three">
+      <article>
+        <h3>Windows</h3>
+        <ol>
+          <li>Download the installer. Your browser will probably warn that it "could harm your device" because the installer is new and not code-signed yet. In Edge, open the downloads list, click the <em>…</em> next to the file, then <em>Keep</em>, <em>Show more</em>, <em>Keep anyway</em>. In Chrome, click the <em>^</em> or <em>…</em> next to the file, then <em>Keep</em>.</li>
+          <li>Run it. If Windows shows "Windows protected your PC", choose <em>More info</em>, then <em>Run anyway</em>. It installs for your user only, so no administrator prompt.</li>
+          <li>Launch Voxenite from the Start Menu or the desktop shortcut.</li>
+        </ol>
+        <p class="req">Needs a GPU with Direct3D 12 or Vulkan support. No extra runtimes to install. Every download has a published SHA-256 checksum on the <a id="win-release-link" href="https://github.com/gharvhel/voxenite-releases/releases/latest">release page</a> if you want to verify it.</p>
+      </article>
+      <article>
+        <h3>macOS</h3>
+        <ol>
+          <li>Download the <code>.dmg</code>, open it, and drag Voxenite into Applications.</li>
+          <li>Open Voxenite. macOS will block it the first time because the build is not notarized.</li>
+          <li>Go to <em>System Settings</em>, <em>Privacy &amp; Security</em>, scroll down and click <em>Open Anyway</em>. On older macOS, right-click the app and choose <em>Open</em> instead.</li>
+        </ol>
+        <p class="req">Universal binary for Apple silicon and Intel. Needs macOS 12 or newer.</p>
+      </article>
+      <article>
+        <h3>Linux</h3>
+        <ol>
+          <li>Download the <code>.AppImage</code> and make it executable: <code>chmod +x voxenite-*.AppImage</code></li>
+          <li>Run it. No installation, no root. It works on any recent distribution.</li>
+        </ol>
+        <p class="req">Needs a Vulkan-capable GPU and driver. x86-64 only for now.</p>
+      </article>
+    </div>
+    <p class="note">
+      Updates never touch your worlds. Uninstalling leaves the <code>saves</code> folder in place too.
+    </p>
+  </section>
+
+  <section class="channels" id="channels">
+    <h2>Release channels</h2>
+    <div class="grid two">
+      <article>
+        <h3>Stable</h3>
+        <p>What the download button above gives you. Only major, tested releases land here. The game checks this channel on launch and offers the update when one is ready.</p>
+      </article>
+      <article>
+        <h3>Dev</h3>
+        <p>Every tagged build, including experiments. Expect bugs and save-format changes. To follow it, create a file named <code>channel.txt</code> in the game's install folder containing the word <code>dev</code>.</p>
+        <p><a id="dev-link" href="channels/dev.json">Latest dev build manifest</a></p>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>Voxenite is in development. Builds are unsigned and provided as-is.
+     <a id="releases-link" href="#">All releases</a></p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
