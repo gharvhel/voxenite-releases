@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voxenite</title>
+  <meta name="description" content="A co-op survival game where the whole world works like the real one. Trees fall the way they lean, grass fire runs with the wind, water finds its level and the dark is dark.">
+  <meta name="theme-color" content="#0a0806">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Voxenite">
+  <meta property="og:description" content="A realistic co-op survival world built from blocks 0.125 m across. Cut it, burn it, flood it. Everything reacts.">
+  <meta property="og:url" content="https://voxenite.com/">
+  <meta property="og:image" content="https://voxenite.com/media/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="A grass fire spreads through a dry meadow at golden hour in Voxenite">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="preload" as="image" href="media/hero-pond.jpg" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script data-goatcounter="https://voxenite.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  <script src="count.js" defer></script>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to the content</a>
+
+<header class="top" id="top">
+  <a class="brand" href="./" aria-label="Voxenite home">
+    <img class="brand-word" src="media/wordmark-eye-header.webp" alt="Voxenite" width="280" height="80">
+  </a>
+  <nav aria-label="Sections">
+    <a class="nav-opt" href="#game">The game</a>
+    <a class="nav-opt" href="#follow">Follow</a>
+    <a href="buy.html">Buy</a>
+    <a class="nav-live" href="#download">Download</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <video class="hero-video" muted loop playsinline preload="none"
+           poster="media/hero-pond.jpg" aria-hidden="true" data-src="media/hero-pond.mp4"></video>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="embers" aria-hidden="true">
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+
+    <div class="hero-inner">
+      <p class="eyebrow">Co-op survival &middot; play-test open</p>
+      <h1 id="hero-title">
+        <img class="hero-word" src="media/wordmark-eye.webp" alt="Voxenite" width="1520" height="418" fetchpriority="high">
+      </h1>
+      <p class="made-by">made by Gharvhel &middot; Building Reality</p>
+      <p class="hero-line">A survival world built from blocks <strong>0.125&nbsp;m</strong> across.<br>
+        Cut it, burn it, flood it. Everything reacts.</p>
+      <div class="cta">
+        <a class="btn btn-ember" href="#download">
+          <span class="btn-label">Play the test build</span>
+          <span class="btn-sub">Free download for Windows</span>
+        </a>
+        <a class="btn btn-ghost" href="#game">See the game</a>
+      </div>
+      <p class="soon"><a href="https://discord.gg/utfrQwDee" rel="noopener">Ask for a key on the Discord</a>,
+        or <a href="#signup">get one email</a> when it&rsquo;s on Steam.</p>
+    </div>
+
+    <button class="motion-toggle" type="button" id="motion-toggle" aria-pressed="false" hidden>
+      <span class="motion-icon" aria-hidden="true"></span><span class="motion-label">Pause video</span>
+    </button>
+
+    <svg class="horizon" viewBox="0 0 1600 64" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 64V40h48v-8h56v8h40v-16h64v8h48v-16h72v8h40v8h56v-24h48v8h64v16h40v-8h56v-8h48v16h72V24h40v-8h56v16h48v8h64v-16h40v8h56v-8h48v16h72v-24h40v8h56v8h48v16h64V64Z" fill="currentColor"/>
+    </svg>
+  </section>
+
+  <section class="scale" aria-labelledby="scale-title">
+    <div class="scale-art" aria-hidden="true">
+      <svg viewBox="0 0 260 240" class="cube">
+        <defs>
+          <pattern id="grid-top" width="12.5" height="12.5" patternUnits="userSpaceOnUse">
+            <path d="M12.5 0H0V12.5" fill="none" stroke="rgba(10,8,6,.45)" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <g transform="translate(130 20)">
+          <g transform="matrix(0.866 0.5 -0.866 0.5 0 0)">
+            <rect width="100" height="100" fill="#6f8f3a"/>
+            <rect width="100" height="100" fill="url(#grid-top)"/>
+          </g>
+          <g transform="matrix(0.866 0.5 0 1 -86.6 50)">
+            <rect width="100" height="100" fill="#7a5532"/>
+            <rect width="100" height="100" fill="url(#grid-top)"/>
+          </g>
+          <g transform="matrix(0.866 -0.5 0 1 0 100)">
+            <rect width="100" height="100" fill="#5a3d24"/>
+            <rect width="100" height="100" fill="url(#grid-top)"/>
+          </g>
+        </g>
+      </svg>
+      <span class="scale-tag">1 m</span>
+    </div>
+    <div class="scale-copy">
+      <p class="eyebrow">The scale</p>
+      <h2 id="scale-title"><span class="big">0.125 m</span> blocks. Eight to a metre.</h2>
+      <p>A cubic metre of Voxenite holds 512 of them, and every one can be cut, burned, soaked or dug out.
+        That is why a felled oak keeps the shape of its crown, why a grass fire leaves a ragged scar,
+        and why water finds every low spot on its way downhill.</p>
+    </div>
+  </section>
+
+  <section class="features" id="game" aria-labelledby="game-title">
+    <h2 class="visually-hidden" id="game-title">The game</h2>
+    <nav class="topics" aria-label="What's in the game">
+      <a href="#trees">Trees</a><a href="#fire">Fire</a><a href="#water">Water</a><a href="#light">Light</a><a href="#wild">Wildlife</a><a href="#survive">Survival</a><a href="#together">Together</a>
+    </nav>
+
+    <article class="feature" id="trees" aria-labelledby="trees-title">
+      <!-- Slot: felling clip -->
+      <figure class="clip">
+        <img src="media/lone-oak.jpg" width="1280" height="720" loading="lazy" decoding="async"
+             alt="A broad oak stands alone on a grassy rise, Scots pines beyond it, in the afternoon sun">
+      </figure>
+      <div class="feature-copy">
+        <p class="num">01 &middot; Trees</p>
+        <h3 id="trees-title">Cut it and it falls.</h3>
+        <p>Chop through a trunk and the tree comes down the way it leans, crown and all, and lands where it lands.
+          What you cut stays cut: the stump, the log, the gap in the canopy.</p>
+      </div>
+    </article>
+
+    <article class="feature flip" id="fire" aria-labelledby="fire-title">
+      <figure class="clip">
+        <video muted loop playsinline preload="none" poster="media/grass-fire.jpg" width="1280" height="720">
+          <source src="media/grass-fire.mp4" type="video/mp4">
+        </video>
+        <figcaption class="visually-hidden">One tuft of dry grass catches at golden hour, and the fire spreads out through the meadow in a ring, leaving black ground behind it.</figcaption>
+      </figure>
+      <div class="feature-copy">
+        <p class="num">02 &middot; Fire</p>
+        <h3 id="fire-title">Dry grass catches.</h3>
+        <p>Touch a torch to cured grass and the fire spreads blade to blade, faster with the wind.
+          Damp grass only smoulders, water puts it out where it lands, and what burned stays black.</p>
+      </div>
+    </article>
+
+    <article class="feature" id="water" aria-labelledby="water-title">
+      <figure class="clip">
+        <video muted loop playsinline preload="none" poster="media/stream-dawn.jpg" width="1280" height="720">
+          <source src="media/stream-dawn.mp4" type="video/mp4">
+        </video>
+        <figcaption class="visually-hidden">A stream runs over pebbles between earth banks through a meadow at dawn.</figcaption>
+      </figure>
+      <div class="feature-copy">
+        <p class="num">03 &middot; Water</p>
+        <h3 id="water-title">Water finds its level.</h3>
+        <p>Springs feed streams and streams fill ponds. Spill water and it spreads thin, runs downhill
+          and soaks into sand and soil, quickly or slowly, the way real ground drinks it.</p>
+      </div>
+    </article>
+
+    <!-- Slot: cave by torchlight clip -->
+    <article class="feature flip" id="light" aria-labelledby="light-title">
+      <figure class="clip">
+        <img src="media/night-fire.jpg" width="1280" height="720" loading="lazy" decoding="async"
+             alt="A grass fire at night lights the meadow and the trees around it, the only light in the dark">
+      </figure>
+      <div class="feature-copy">
+        <p class="num">04 &middot; Light</p>
+        <h3 id="light-title">Dark means dark.</h3>
+        <p>Night and caves get no light but what you bring. A pitch torch burns about twenty minutes,
+          one rolled from birch bark about fifteen, and a twist of dry grass just four.
+          A campfire lights everything round it for as long as you feed it.</p>
+      </div>
+    </article>
+
+    <article class="feature" id="wild" aria-labelledby="wild-title">
+      <figure class="clip">
+        <img src="media/roe-deer.jpg" width="1280" height="720" loading="lazy" decoding="async"
+             alt="Two roe deer stand in a meadow at the edge of a wood in the early light">
+      </figure>
+      <div class="feature-copy">
+        <p class="num">05 &middot; Wildlife</p>
+        <h3 id="wild-title">The wild has its own business.</h3>
+        <p>Roe deer browse at the wood&rsquo;s edge and bolt when they catch your scent on the wind,
+          so come at them from downwind. They are likeliest at dawn and dusk.</p>
+      </div>
+    </article>
+
+    <!-- Slot: knapping and cooking clip -->
+    <article class="feature flip" id="survive" aria-labelledby="survive-title">
+      <figure class="clip">
+        <img src="media/campfire.jpg" width="1280" height="720" loading="lazy" decoding="async"
+             alt="A campfire laid from sticks burns on the grass, strips of venison cooking on green sticks in its flames">
+      </figure>
+      <div class="feature-copy">
+        <p class="num">06 &middot; Survival</p>
+        <h3 id="survive-title">Live off the land.</h3>
+        <p>Knap flint into a blade. Lay a fire from dry grass, sticks and dead branches and light it with your torch.
+          Hang venison beside the flames and take it off when it browns. Leave it too long and it chars.</p>
+      </div>
+    </article>
+
+    <!-- Slot: co-op clip -->
+    <article class="feature" id="together" aria-labelledby="together-title">
+      <figure class="clip">
+        <img src="media/together.jpg" width="1280" height="720" loading="lazy" decoding="async"
+             alt="Two players, a woman and a man, walk together toward a wood at dusk">
+      </figure>
+      <div class="feature-copy">
+        <p class="num">07 &middot; Together</p>
+        <h3 id="together-title">Survive side by side.</h3>
+        <p>Host a world from the menu and your friends join you. Fell trees, fight fires and explore together,
+          in the same world, at the same time.</p>
+      </div>
+    </article>
+
+  </section>
+
+  <section class="download" id="download" aria-labelledby="download-title">
+    <div class="download-inner">
+      <div class="download-copy">
+        <p class="eyebrow">Play-test</p>
+        <h2 id="download-title">Play it now. Tell us what breaks.</h2>
+        <p>Voxenite is early and it changes every day. You get the game as it is today, and it updates itself
+          from then on, so you never install it twice. See something wrong? Press F8 and it sends us your note with a picture of what you&rsquo;re looking at.</p>
+        <a class="btn btn-ember" href="https://github.com/gharvhel/voxenite-releases/releases/latest/download/Voxenite-Setup.exe">
+          <span class="btn-label">Download for Windows</span>
+          <span class="btn-sub">Windows 10 or 11, 64-bit</span>
+        </a>
+        <p class="download-heads-up"><strong>Heads-up:</strong> Windows will warn you when you open it. Choose <strong>More info</strong>, then <strong>Run anyway</strong>.</p>
+        <p class="download-platforms">Windows for now. Linux and Mac later.</p>
+        <div class="download-warn" role="note">
+          <p><strong>Windows will warn you first.</strong> When you run the installer, a blue
+            &ldquo;Windows protected your PC&rdquo; box comes up. Windows shows it for any new program it hasn&rsquo;t
+            seen many people run, and that hasn&rsquo;t got a paid signing certificate yet. It doesn&rsquo;t mean
+            Windows found anything wrong. Choose &ldquo;More info&rdquo;, then &ldquo;Run anyway&rdquo;.</p>
+          <p><strong>&ldquo;Smart App Control blocked an app&rdquo;?</strong> Some Windows&nbsp;11 PCs have Smart App
+            Control on, and it gives no &ldquo;Run anyway&rdquo; button. We&rsquo;re getting the installer signed so
+            it simply opens there too. Until then you can turn it off in Windows Security &rarr; App &amp; browser
+            control &rarr; Smart App Control. Know before you do: Voxenite only runs while it stays off (turning it
+            back on blocks the game again), and since the October 2026 Windows update some PCs can&rsquo;t switch it
+            back on from that screen. If you&rsquo;d rather wait, tell us on the Discord and we&rsquo;ll let you know
+            the day the signed installer is up.</p>
+          <p>Want to be sure first? Upload the installer to <a href="https://www.virustotal.com/" rel="noopener">VirusTotal</a>
+            before you run it. It&rsquo;s free, and it checks the file with about seventy virus scanners.</p>
+        </div>
+        <p class="download-buy"><a href="https://discord.gg/utfrQwDee" rel="noopener">Need a key? Ask on the Discord.</a>
+          Buying Voxenite: coming soon.</p>
+      </div>
+      <div class="download-how">
+        <h3>Getting started</h3>
+        <ol class="download-steps">
+          <li><strong>Run Voxenite-Setup.exe.</strong> When Windows warns you, choose &ldquo;More info&rdquo;,
+            then &ldquo;Run anyway&rdquo;. If your browser asks whether to keep the file, choose Keep.</li>
+          <li><strong>Click Install.</strong> That&rsquo;s all it asks.</li>
+          <li><strong>Make an account</strong> in the game, with your email and a password.</li>
+          <li><strong>Enter your key.</strong> You only do this once.</li>
+        </ol>
+        <h3>What you need</h3>
+        <ul class="download-needs">
+          <li>8 GB of memory and a 4-core processor</li>
+          <li>A graphics card with Vulkan drivers. A GTX 1060 or RX 580 is the least we&rsquo;d try, and an RTX 3060 or better plays best. We&rsquo;re still finding out what it takes, so tell us how it runs.</li>
+          <li>Playing with friends over the internet needs a forwarded port on the host&rsquo;s router for now. Your worlds stay on your PC.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="follow" id="follow" aria-labelledby="follow-title">
+    <p class="eyebrow">Follow Voxenite</p>
+    <h2 id="follow-title">Clips, news and the road to Steam.</h2>
+    <ul class="follow-links">
+      <li><a href="https://www.twitch.tv/voxenitegame" rel="noopener"><span>Twitch</span><small>@voxenitegame</small></a></li>
+      <li><a href="https://discord.gg/utfrQwDee" rel="noopener"><span>Discord</span><small>Talk to us</small></a></li>
+      <li><a href="https://www.youtube.com/@voxenitegame" rel="noopener"><span>YouTube</span><small>Clips</small></a></li>
+      <li><a href="https://x.com/VoxeniteGame" rel="noopener"><span>X</span><small>@VoxeniteGame</small></a></li>
+      <li><a href="https://www.tiktok.com/@voxenitegame" rel="noopener"><span>TikTok</span><small>@voxenitegame</small></a></li>
+      <li><a href="https://www.instagram.com/voxenitegame" rel="noopener"><span>Instagram</span><small>@voxenitegame</small></a></li>
+      <li><a href="https://www.threads.com/@voxenitegame" rel="noopener"><span>Threads</span><small>@voxenitegame</small></a></li>
+      <li><a href="https://www.reddit.com/user/VoxeniteDev" rel="noopener"><span>Reddit</span><small>u/VoxeniteDev</small></a></li>
+    </ul>
+
+    <form class="signup" id="signup" action="https://app.kit.com/forms/9998948/subscriptions" method="post"
+          aria-labelledby="signup-title">
+      <h3 id="signup-title">Get one email when Voxenite is on Steam</h3>
+      <div class="signup-row">
+        <label class="visually-hidden" for="signup-email">Email address</label>
+        <input id="signup-email" type="email" name="email_address" placeholder="you@example.com"
+               autocomplete="email" required aria-describedby="signup-note">
+        <button class="btn btn-ember" type="submit"><span class="btn-label">Sign up</span></button>
+      </div>
+      <p class="signup-note" id="signup-note">One email when it&rsquo;s on Steam, and news now and then. Unsubscribe any time.</p>
+    </form>
+  </section>
+
+</main>
+
+<dialog class="dl-guide" id="dl-guide" aria-labelledby="dl-guide-title">
+  <form method="dialog" class="dl-guide-inner">
+    <p class="eyebrow">Your download has started</p>
+    <h2 id="dl-guide-title">Before you open it</h2>
+    <p class="dl-guide-lead">Windows warns about every new game that isn&rsquo;t widely known yet. Here&rsquo;s what you&rsquo;ll see and what to press.</p>
+    <ol class="dl-guide-steps">
+      <li><strong>Open Voxenite-Setup.exe</strong> from your downloads. If the browser asks whether to keep it, choose <strong>Keep</strong>.</li>
+      <li><strong>A blue &ldquo;Windows protected your PC&rdquo; box comes up.</strong> Press <strong>More info</strong>, then <strong>Run anyway</strong>.
+        <div class="dl-guide-picture" aria-hidden="true">
+          <span class="dl-pic-title">Windows protected your PC</span>
+          <span class="dl-pic-text">Microsoft Defender SmartScreen prevented an unrecognized app from starting&hellip;</span>
+          <span class="dl-pic-link">More info</span>
+          <span class="dl-pic-buttons"><span class="dl-pic-btn dl-pic-run">Run anyway</span><span class="dl-pic-btn">Don&rsquo;t run</span></span>
+        </div>
+        <span class="dl-guide-note">A sketch of the box. Run anyway only shows once you press More info.</span></li>
+      <li><strong>Click Install.</strong> Then make an account in the game and enter your key.</li>
+    </ol>
+    <div class="dl-guide-sac">
+      <p><strong>&ldquo;Smart App Control blocked an app&rdquo; with no Run anyway?</strong> Some Windows&nbsp;11 PCs block new apps outright. We&rsquo;re getting the installer signed so it opens there too. <a href="#download" data-close>Read the options</a> or ask us on the <a href="https://discord.gg/utfrQwDee" rel="noopener">Discord</a>.</p>
+    </div>
+    <button class="btn btn-ember dl-guide-ok" value="ok"><span class="btn-label">Got it</span></button>
+  </form>
+</dialog>
+
+<script src="download_help.js" defer></script>
+
+<footer>
+  <img src="icon.png" alt="" width="26" height="26">
+  <p>Voxenite is in early development. Everything you see here is from the game as it is today.</p>
+  <p class="foot-links"><a href="buy.html">Buy</a> <a href="press.html">Press kit</a> <a href="terms.html">Terms</a> <a href="refund.html">Refunds</a> <a href="privacy.html">Privacy</a> <a href="mailto:voxenitegame@gmail.com">Contact</a></p>
+  <p class="copy">&copy; 2026 Voxenite &middot; made by Gharvhel</p>
+</footer>
+
+<script>
+  (function () {
+    var mq = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
+    var reduce = !!(mq && mq.matches);
+    var saveData = !!(navigator.connection && navigator.connection.saveData);
+    var paused = reduce;
+
+    // The hero loop loads after the page, and never with reduced motion or Save-Data on.
+    var hero = document.querySelector('.hero-video');
+    var toggle = document.getElementById('motion-toggle');
+    var clips = Array.prototype.slice.call(document.querySelectorAll('.clip video'));
+    var visible = new Set();
+
+    function playClip(v) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+    function setPaused(on) {
+      paused = on;
+      toggle.setAttribute('aria-pressed', on ? 'true' : 'false');
+      toggle.querySelector('.motion-label').textContent = on ? 'Play video' : 'Pause video';
+      if (on) {
+        if (hero) hero.pause();
+        clips.forEach(function (v) { v.pause(); });
+      } else {
+        if (hero && hero.src) playClip(hero);
+        visible.forEach(playClip);
+      }
+    }
+
+    if (hero && !reduce && !saveData) {
+      var startHero = function () {
+        hero.src = hero.getAttribute('data-src');
+        hero.preload = 'auto';
+        playClip(hero);
+        toggle.hidden = false;
+      };
+      if (document.readyState === 'complete') startHero(); else window.addEventListener('load', startHero);
+    }
+    if (toggle) toggle.addEventListener('click', function () { setPaused(!paused); });
+
+    if (!reduce && 'IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          var v = e.target;
+          if (e.isIntersecting) {
+            visible.add(v);
+            if (v.preload === 'none') { v.preload = 'auto'; v.load(); }
+            if (!paused) playClip(v);
+          } else {
+            visible.delete(v);
+            v.pause();
+          }
+        });
+      }, { threshold: 0.35 });
+      clips.forEach(function (v) { io.observe(v); });
+    }
+
+    var top = document.getElementById('top');
+    var onScroll = function () { top.classList.toggle('scrolled', window.scrollY > 40); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  })();
+</script>
+</body>
+</html>

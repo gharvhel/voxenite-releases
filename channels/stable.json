@@ -1,0 +1,35 @@
+{
+  "channel": "stable",
+  "version": "0.2.0",
+  "released": "2026-09-05T20:12:03Z",
+  "notes_url": "https://github.com/gharvhel/voxenite-releases/releases/tag/v0.2.0",
+  "platforms": {
+    "linux-x64": {
+      "executable": "voxenite",
+      "url": "https://github.com/gharvhel/voxenite-releases/releases/download/v0.2.0/voxenite-0.2.0-linux-x64.AppImage",
+      "kind": "appimage",
+      "size": 11033080,
+      "sha256": "eff6d1f699a1a732825e2bb7ccac593b99682c37de52dfb205b754f5cc2741ae"
+    },
+    "macos-universal": {
+      "executable": "voxenite",
+      "update": {
+        "url": "https://github.com/gharvhel/voxenite-releases/releases/download/v0.2.0/voxenite-0.2.0-macos-universal.zip",
+        "kind": "zip",
+        "size": 16462324,
+        "sha256": "bc39ea96d30b40cc0085547bbe5b8e991b2d8a498233e7fa01558d810563d2e1"
+      },
+      "url": "https://github.com/gharvhel/voxenite-releases/releases/download/v0.2.0/voxenite-0.2.0-macos-universal.dmg",
+      "kind": "dmg",
+      "size": 17448608,
+      "sha256": "d9abec3acc9913c906e0da932dfcbdaf21fe4112e6df5c5bc3e3fb1d30912eb8"
+    },
+    "windows-x64": {
+      "executable": "voxenite.exe",
+      "url": "https://github.com/gharvhel/voxenite-releases/releases/download/v0.2.0/voxenite-0.2.0-windows-x64-setup.exe",
+      "kind": "installer",
+      "size": 8398421,
+      "sha256": "d77a00acea28513cf40e38d4fd98b1d738c26bd47bc17d99010588fe3fc09cc1"
+    }
+  }
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your key | Voxenite</title>
+  <meta name="description" content="Your Voxenite licence key, after you buy the game.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0a0806">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="bought">
+<header class="top" id="top">
+  <a class="brand" href="./" aria-label="Voxenite home">
+    <img class="brand-word" src="media/wordmark-eye-header.webp" alt="Voxenite" width="280" height="80">
+  </a>
+</header>
+
+<main class="press">
+  <section class="press-head" aria-labelledby="page-title">
+    <p class="eyebrow">Thank you</p>
+    <h1 id="page-title">Your licence key</h1>
+  </section>
+
+  <section class="press-block" id="bought-owned" hidden>
+    <p class="bought-state" id="bought-owned-state" role="status"></p>
+    <p>Paddle emails you a receipt with your order number.</p>
+  </section>
+
+  <section class="press-block" id="bought-found" hidden>
+    <p class="bought-fell-back" id="bought-fell-back" hidden>We couldn&rsquo;t add this purchase to your game&rsquo;s account (the link from the game had run out, or that account already owns Voxenite), so here is a key for it instead. Enter it on any account, or give it to a friend.</p>
+    <p class="bought-key" id="bought-key"></p>
+    <p class="bought-state" id="bought-state" role="status"></p>
+    <p class="bought-sandbox" id="bought-sandbox" hidden>This was a test purchase in Paddle&rsquo;s sandbox. No money changed hands, and the key is a tester&rsquo;s.</p>
+    <div class="cta">
+      <button class="btn btn-ember" type="button" id="bought-copy"><span class="btn-label">Copy the key</span><span class="btn-sub" id="bought-copy-note">Paste it in the game</span></button>
+      <a class="btn btn-ghost" id="bought-save" href="#">Save it as a file</a>
+    </div>
+    <p><strong>Keep this key.</strong> It is only in this browser and on this page, so copy it or save it now. Paddle emails you a receipt with your order number.</p>
+    <h2>Start playing</h2>
+    <ol class="download-steps">
+      <li><strong><a href="https://github.com/gharvhel/voxenite-releases/releases/latest/download/Voxenite-Setup.exe">Download Voxenite-Setup.exe</a></strong> and run it. When Windows warns you, choose &ldquo;More info&rdquo;, then &ldquo;Run anyway&rdquo;.</li>
+      <li><strong>Click Install.</strong> The game starts by itself.</li>
+      <li><strong>Make an account</strong> in the game with your email and a password, and paste the key in the Licence Key box. Already have an account? Sign in and choose Enter Licence Key.</li>
+    </ol>
+  </section>
+
+  <section class="press-block" id="bought-missing">
+    <p>We can&rsquo;t find a key in this browser. Keys are made in the browser you bought with, so open this page there.</p>
+    <p>Bought on another device, or lost it? Email <a href="mailto:voxenitegame@gmail.com">voxenitegame@gmail.com</a> with the order number from Paddle&rsquo;s receipt and we&rsquo;ll send you a new key.</p>
+  </section>
+</main>
+
+<footer>
+  <img src="icon.png" alt="" width="26" height="26">
+  <p class="foot-links"><a href="buy.html">Buy</a> <a href="press.html">Press kit</a> <a href="terms.html">Terms</a> <a href="refund.html">Refunds</a> <a href="privacy.html">Privacy</a> <a href="mailto:voxenitegame@gmail.com">Contact</a></p>
+  <p class="copy">&copy; 2026 Voxenite &middot; made by Gharvhel</p>
+</footer>
+
+<script src="checkout.js"></script>
+</body>
+</html>
